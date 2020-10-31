@@ -96,7 +96,7 @@ for char in text:
         
 print(new_string)
 
-out = cv.putText(image, text, (450,450), cv.FONT_HERSHEY_SIMPLEX,1, (255,255,255), 1, cv.LINE_AA)
+out = cv.putText(image, text, (420,450), cv.FONT_HERSHEY_SIMPLEX,1.25, (255,255,255), 1, cv.LINE_AA)
 cv.imshow('Output', out)
 cv.waitKey(0)
 cv.destroyAllWindows()
