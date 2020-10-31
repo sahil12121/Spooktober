@@ -71,15 +71,6 @@ cv.imshow('Cropped',Cropped)
 
 
 
-# scale_percent = 300 # percent of original size
-# width = int(Cropped.shape[1] * scale_percent / 100)
-# height = int(Cropped.shape[0] * scale_percent / 100)
-# dim = (width, height)
-# # resize image
-# # invert = cv.resize(Cropped, dim, interpolation = cv.INTER_NEAREST)
-# cv.imshow('Resize', invert)
-
-
 
 #Read the number plate
 text = pytesseract.image_to_string(Cropped, config='--psm 11')
