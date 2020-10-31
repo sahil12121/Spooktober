@@ -1,1 +1,3 @@
 # Spooktober
+
+Hacktober fest repo
