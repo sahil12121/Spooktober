@@ -21,12 +21,6 @@ cv.imshow('Bilateral Filter',gray)
 edge = cv.Canny(gray, 30, 200) #Perform Edge detection
 cv.imshow('Canny Edge Detection',edge)
 
-# find contours in the edge image
-# contours, hierarchy = cv.findContours(edge,cv.RETR_EXTERNAL, cv.CHAIN_APPROX_NONE) 
-# cv.drawContours(image, contours, -1, (0, 255, 0), 3) 
-# cv.imshow('Contours', image) 
-
-
 
 # Retaining only the contour with number plate
 contours = cv.findContours(edge.copy(), cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
